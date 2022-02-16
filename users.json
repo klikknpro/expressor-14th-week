@@ -1,8 +1,4 @@
 [
-  { "username": "G-man", "password": "gman" },
-  { "username": "jkdfbk", "password": "jksdvl" },
-  { "username": "jkdvb", "password": "jkvjl" },
-  { "username": "Bela", "password": "kapa" },
-  { "username": "New", "password": "new" },
-  { "username": "Tom", "password": "asd" }
+  { "username": "Mike Olbinski", "password": "asd", "todos": [] },
+  { "username": "Bela", "password": "fgh", "todos": ["wash dishes", "wash dishes again"] }
 ]
