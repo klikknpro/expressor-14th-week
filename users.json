@@ -1,4 +1,11 @@
 [
   { "username": "Mike Olbinski", "password": "asd", "todos": [] },
-  { "username": "Bela", "password": "fgh", "todos": ["wash dishes", "wash dishes again"] }
+  {
+    "username": "Bela",
+    "password": "fgh",
+    "todos": ["wash dishes", "wash dishes again", "shopping", "watch tv", "clean driveway", "pack"]
+  },
+  { "username": "Joe", "password": "asd", "todos": [] },
+  { "username": "Joey", "password": "1234", "todos": ["wash", "pack", "widget"] },
+  { "username": "Jack", "password": "crack", "todos": [] }
 ]

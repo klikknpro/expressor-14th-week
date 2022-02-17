@@ -55,6 +55,20 @@ app.post("/api/todo", (req, res) => {
   res.sendStatus(200);
 });
 
+// valami bejelentkezo valami
+app.post("/api/login", (req, res) => {
+  const authorization = req.header("Authorization");
+  if (!authorization) return res.sendStatus(401);
+
+  const username = authorization.split(":::")[0];
+  const password = authorization.split(":::")[1];
+
+  const validUser = users.find((user) => user.username === username && user.password === password);
+  if (!validUser) return res.sendStatus(401);
+
+  res.sendStatus(200);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
