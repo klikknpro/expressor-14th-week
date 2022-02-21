@@ -74,10 +74,18 @@ app.post("/api/login", (req, res) => {
   setTimeout(() => {
     console.log("the end");
     delete mySessionStorage[sessionId];
-  }, 10 * 1000);
+  }, 10 * 60 * 1000);
 
   // most mar csak a random sessionId megy vissza a FE-re
   res.json(sessionId);
+});
+
+// sign out
+app.delete("/api/signout", (req, res) => {
+  const sessionId = req.header("Authorization");
+  if (!sessionId) return res.sendStatus(401);
+  delete mySessionStorage[sessionId];
+  res.sendStatus(200);
 });
 
 app.listen(port, () => {
